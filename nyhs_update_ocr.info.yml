@@ -1,0 +1,7 @@
+name: 'NYHS Update OCR'
+type: module
+description: 'Creates Extracted Text files when missing'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - islandora:islandora

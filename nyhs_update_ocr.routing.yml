@@ -1,0 +1,7 @@
+nyhs_update_ocr.makeocr:
+  path: '/nyhs-update-ocr/makeocr'
+  defaults:
+    _title: 'Make OCR'
+    _form: 'Drupal\nyhs_update_ocr\Form\MakeOCRForm'
+  requirements:
+    _permission: 'access content'

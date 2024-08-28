@@ -25,7 +25,7 @@ final class MakeOCRForm extends FormBase {
   protected IslandoraUtils $utils;
 
   /**
-   * The Entity Type manager .
+   * The Entity Type manager.
    *
    * @var \Drupal\Core\Entity\EntityTypeManagerInterface
    */
@@ -58,7 +58,7 @@ final class MakeOCRForm extends FormBase {
    * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entityTypeManager
    *   The entity type manager.
    * @param \Drupal\islandora\IslandoraUtils $utils
-   *   The Islandora Untilities.
+   *   The Islandora Utilities.
    * @param \Drupal\Core\Database\Connection $database
    *   The database connection.
    * @param Psr\Log\LoggerInterface\ $logger
@@ -123,7 +123,7 @@ final class MakeOCRForm extends FormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state): void {
     $this->action = $this->entityTypeManager->getStorage('action')
-      ->load('get_ocr_from_service_file');
+      ->load('extract_text_from_service_file');
     $term_uris = [
       'http://purl.org/dc/dcmitype/Collection',
       'http://vocab.getty.edu/aat/300242735',
